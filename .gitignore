@@ -2,6 +2,5 @@
 .ruff_cache
 .coverage
 venv
-inference.py
 .DS_Store
 .idea

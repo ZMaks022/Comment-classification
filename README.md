@@ -81,3 +81,23 @@
 pytest tests/
 ```
 
+## Inference скрипт
+
+Присутній скрипт який завантажить моделі та зробить передбачення для наданого тексту.
+Для цього виконайте наступні команди:
+   ```sh
+   pip install nltk~=3.8.1 pandas~=2.1.3 joblib~=1.3.2 requests~=2.31.0 scikit-learn~=1.3.2
+   ```
+Завантажте файл `inference.py`. Та запустіть його з наступними параметрами:
+
+| Flag | Long Form  | Description                     |
+|------|------------|---------------------------------|
+| -d   | --data     | Path to a CSV file to process   |
+| -o   | --output   | Path to output of prediction    |
+
+### Приклад
+   ```sh
+    python3 inference.py -d test.csv -o sub.csv
+   ```
+
+де `test.csv` це ваш файл з даними з наявними колонками `id` та `comment_text`, а `sub.csv` це файл в який ви хочете записати результат. 
