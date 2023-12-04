@@ -65,9 +65,9 @@ args = parser.parse_args()
 try:
     if not os.path.exists("models"):
         os.makedirs("models")
-        print(f"Directory 'models' is successful created.")
+        print("Directory 'models' is successful created.")
     else:
-        print(f"Directory 'models' already exist.")
+        print("Directory 'models' already exist.")
 except Exception as e:
     print(f"Error with creating directory: {e}")
 
