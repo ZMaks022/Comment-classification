@@ -20,7 +20,7 @@ jobs:
         pip install -r requirements.txt
 
     - name: Download NLTK data
-      run: python .github/workflows/download_nltk_data.py
+      run: python .github/workflows/download_nltk.py
 
     - name: Check style with ruff
       run: ruff check .
