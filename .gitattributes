@@ -1,0 +1,5 @@
+*.csv filter=lfs diff=lfs merge=lfs -text
+src/data/prepared_train.csv filter=lfs diff=lfs merge=lfs -text
+src/data/submission.csv filter=lfs diff=lfs merge=lfs -text
+src/data/test.csv filter=lfs diff=lfs merge=lfs -text
+src/data/train.csv filter=lfs diff=lfs merge=lfs -text
