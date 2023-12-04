@@ -1,6 +1,7 @@
 import pandas as pd
 import json
 import joblib
+from prepare_text import prepare_text, filter_words
 
 
 test = pd.read_csv('data/test.csv')
